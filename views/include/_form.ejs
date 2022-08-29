@@ -1,0 +1,35 @@
+<form action="/api/books" method="POST" id="add_book">
+    <div class="new_book">
+        <div class="form-group">
+            <label for="title" class="text-light">Title</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="title" value="" placeholder="Blindsight">
+        </div>
+        <div class="form-group">
+            <label for="author" class="text-light">Author</label>
+            <input type="text" name="author" value="" placeholder="Peter Watts">
+        </div>
+        <div class="form-group">
+            <label for="year" class="text-light">Year Published</label>
+            <input type="text" name="year" value="" placeholder="2006">
+        </div>
+        <div class="form-group">
+            <label for="genre" class="text-light">Genre</label>
+            <input type="text" name="genre" value="" placeholder="Sci-Fi">
+        </div>
+        <div class="form-group">
+            <label for="type" class="text-light">Type</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="type" value="F">
+                <label for="radio-2" class="radio-label">Fiction</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="type" value="NF">
+                <label for="radio-3" class="radio-label">Nonfiction</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
